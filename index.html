@@ -12,7 +12,7 @@ nav{text-align:center;font-size:14px}a{color:#1D433B}code{background:#f3ece0;pad
 
 <section id="ar">
 <h1>سياسة الخصوصية — تطبيق «بصمة»</h1>
-<small>آخر تحديث: 10 أكتوبر 2026 · معرّف التطبيق: com.aljawhar.basma · المطوّر: الجوهر (Aljawhar) · التواصل: <a href="mailto:al.gawhar.2020@gmail.com">al.gawhar.2020@gmail.com</a></small>
+<small>آخر تحديث: 10 أكتوبر 2026 (الإصدار 1.1.4) · معرّف التطبيق: com.aljawhar.basma · المطوّر: الجوهر (Aljawhar) · التواصل: <a href="mailto:al.gawhar.2020@gmail.com">al.gawhar.2020@gmail.com</a></small>
 <h2>ملخص</h2>
 <p>«بصمة» تطبيق لتسجيل حضور وانصراف العمال. صاحب المنشأة (المسؤول) يسجّل منشأته ويضيف عماله، وكل عامل يربط جواله ويسجّل حضوره وانصرافه بعد التحقق من هويته على جواله ومن موقعه. حتى يشوف المسؤول الحضور، تنحفظ البيانات في <b>خادم (سيرفر) يديره مطوّر التطبيق</b>. <b>ما نبيع البيانات، وما نشاركها مع معلنين أو أي جهة ثانية، وما في التطبيق إعلانات ولا أدوات تحليلات ولا تتبّع.</b></p>
 <h2>البيانات اللي نجمعها</h2>
@@ -24,21 +24,30 @@ nav{text-align:center;font-size:14px}a{color:#1D433B}code{background:#f3ece0;pad
 <tr><td>معرّف ربط الجهاز: مفتاح تشفير عام ينولد على جوال العامل (المفتاح الخاص ما يطلع من الجوال أبداً)، نوع الجهاز/المتصفح، وقت الربط</td><td>جوال العامل</td><td>التأكد إن التسجيل جاي من الجوال المربوط بالعامل نفسه</td></tr>
 <tr><td><b>الموقع الدقيق (GPS)</b> ودقته والمسافة عن موقع العمل، ومؤشر «موقع وهمي»</td><td>جوال العامل — <b>لحظة الضغط على حضور أو انصراف فقط</b></td><td>إثبات إن التسجيل تم من موقع العمل</td></tr>
 <tr><td>وقت كل تسجيل (بساعة السيرفر) ووقت الجوال، نوع التسجيل (حضور/انصراف)، طريقة التحقق المستخدمة (بصمة/قفل الجهاز/رمز سري — <b>نوعها فقط</b>)</td><td>جوال العامل</td><td>سجل الحضور والتقارير الشهرية</td></tr>
+<tr><td><b>صورة سيلفي</b> (صورة وحدة من الكاميرا الأمامية، مضغوطة تقريباً 50–80 كيلوبايت)</td><td>جوال العامل — <b>لحظة الحضور أو الانصراف فقط</b>، إذا كان المسؤول مفعّل خيار «صورة سيلفي مع كل بصمة» (مفعّل افتراضياً)</td><td>منع التلاعب: يتأكد المسؤول بعينه إن صاحب الحساب نفسه هو اللي بصم، مو شخص ثاني بجواله</td></tr>
+<tr><td>تنبيهات الأمان: محاولة تسجيل أو ربط من جوال غير الجوال المربوط (الوقت، نوع الجهاز، عنوان IP، وصورة المحاولة إن وُجدت)</td><td>تلقائي</td><td>تنبيه المسؤول بـ«محاولة دخول من جهاز آخر»</td></tr>
 <tr><td>عنوان IP عند الربط وعند كل تسجيل</td><td>تلقائي</td><td>الأمان ومنع إساءة الاستخدام</td></tr>
 <tr><td>بيانات الاشتراك: رمز الشراء (purchase token)، رقم الطلب، الباقة، تاريخ الانتهاء، ومعرّف حساب مُعمّى لا يكشف هويتك</td><td>Google Play عند اشتراك المسؤول</td><td>تفعيل الباقة والتحقق منها</td></tr>
 </table>
 <p><b>الموقع:</b> التطبيق ياخذ الموقع وهو مفتوح فقط، لحظة التسجيل أو لما يضغط المسؤول «استخدم موقعي الحالي»، و<b>ما يتتبّع الموقع في الخلفية أبداً</b>.</p>
 <p><b>البصمة والوجه:</b> التحقق يصير بنظام Android نفسه على الجوال. التطبيق <b>ما يستلم ولا يحفظ</b> صور البصمة أو الوجه، بس يستلم نتيجة «نجح/فشل». والرمز السري الاحتياطي ينحفظ مشفّراً على الجوال فقط.</p>
+<h2>الكاميرا وصور السيلفي</h2>
+<ul><li>التطبيق يطلب إذن <b>الكاميرا</b> بعد ما يشرح سببه داخل التطبيق، ويستخدم <b>الكاميرا الأمامية فقط</b> لحظة الضغط على حضور أو انصراف. الصورة تنلتقط مباشرة داخل التطبيق — <b>ما يقدر العامل يختار صورة من الألبوم، والتطبيق ما يوصل لصورك أو ملفاتك أبداً</b>.</li>
+<li>الصورة تنرسل مشفّرة (HTTPS) مع التسجيل وتنحفظ على خادمنا، وبصمتها الرقمية موقّعة بمفتاح الجهاز مع التسجيل عشان ما تنستبدل.</li>
+<li><b>مين يشوفها:</b> مسؤول المنشأة نفسها فقط (صورة مصغّرة جنب كل تسجيل في اللوحة والسجل). وما نشاركها مع أي جهة.</li>
+<li><b>ما نسوي تعرّف على الوجه</b> ولا أي تحليل حيوي للصور، ولا نستخدمها لأي غرض ثاني. المقارنة بصرية من المسؤول بنفسه.</li>
+<li><b>الحذف التلقائي:</b> كل صورة تنحذف من الخادم تلقائياً بعد <b>90 يوم</b> من تاريخ التسجيل (التسجيل نفسه يبقى بدون صورة). وإذا انحذفت المنشأة تنحذف صورها فوراً. الصور ما تدخل في النسخ الاحتياطية.</li>
+<li>المسؤول يقدر يقفل الخيار من الإعدادات ← منع التلاعب، وبعدها ما تنلتقط صور.</li></ul>
 <h2>واتساب</h2>
 <p>بعد كل تسجيل، التطبيق يفتح واتساب برسالة جاهزة فيها اسم العامل والوقت ورابط الموقع على الخريطة. <b>الرسالة ما تنرسل إلا إذا ضغط العامل زر الإرسال بنفسه</b>، وبعدها تخضع لسياسة خصوصية واتساب. التطبيق ما يرسل أي شي لواتساب من نفسه.</p>
 <h2>الاشتراكات والدفع</h2>
 <p>الباقات المدفوعة تنباع عن طريق <b>Google Play</b>. الدفع وبيانات البطاقة عند Google بالكامل، ونحن <b>ما نشوف ولا نحفظ</b> أي بيانات دفع. نستلم بس رمز الشراء وحالة الاشتراك، ونقدر نتحقق منها من Google Play.</p>
 <h2>مين يشوف البيانات</h2>
-<ul><li><b>المسؤول</b> يشوف بيانات منشأته فقط: العمال وتسجيلاتهم ومواقعها والتقارير.</li><li><b>العامل</b> يشوف تسجيلاته هو فقط.</li><li><b>المطوّر</b> يقدر يوصل للبيانات لتشغيل الخدمة وصيانتها والدعم الفني فقط.</li><li><b>مزوّد الاستضافة</b> يخزّن الخادم نيابة عنا. ما نشارك البيانات مع أي طرف ثالث لأغراضه الخاصة، إلا إذا أُلزمنا بنظام أو أمر جهة رسمية مختصة.</li></ul>
+<ul><li><b>المسؤول</b> يشوف بيانات منشأته فقط: العمال وتسجيلاتهم ومواقعها وصور السيلفي وتنبيهات الأمان والتقارير.</li><li><b>العامل</b> يشوف تسجيلاته هو فقط.</li><li><b>المطوّر</b> يقدر يوصل للبيانات لتشغيل الخدمة وصيانتها والدعم الفني فقط.</li><li><b>مزوّد الاستضافة</b> يخزّن الخادم نيابة عنا. ما نشارك البيانات مع أي طرف ثالث لأغراضه الخاصة، إلا إذا أُلزمنا بنظام أو أمر جهة رسمية مختصة.</li></ul>
 <h2>الحماية</h2>
 <p>الاتصال بين التطبيق والخادم <b>مشفّر (HTTPS)</b>، وتطبيق أندرويد يرفض الاتصال غير المشفّر. كلمات المرور ورموز الجلسات تنحفظ مُجزّأة (hashed)، وكل تسجيل حضور موقّع بمفتاح الجهاز. ما في نظام آمن ١٠٠٪، لكن نسوي اللي نقدر عليه لحماية بياناتك.</p>
 <h2>مدة الحفظ والحذف</h2>
-<p>نحتفظ بالبيانات طول ما حساب المنشأة موجود. لما يحذف المسؤول المنشأة من داخل التطبيق (الإعدادات ← حذف المنشأة)، تنحذف كل بياناتها (العمال والتسجيلات والإعدادات) من الخادم فوراً، وتختفي من النسخ الاحتياطية التلقائية خلال <b>48 ساعة</b> تقريباً. شوف قسم <a href="#delete">حذف البيانات</a>.</p>
+<p><b>صور السيلفي وتنبيهات الأمان تنحذف تلقائياً بعد 90 يوم.</b> باقي البيانات نحتفظ فيها طول ما حساب المنشأة موجود. لما يحذف المسؤول المنشأة من داخل التطبيق (الإعدادات ← حذف المنشأة)، تنحذف كل بياناتها (العمال والتسجيلات والإعدادات) من الخادم فوراً، وتختفي من النسخ الاحتياطية التلقائية خلال <b>48 ساعة</b> تقريباً. شوف قسم <a href="#delete">حذف البيانات</a>.</p>
 <h2>الأطفال</h2>
 <p>التطبيق موجّه لأصحاب المنشآت والعمال البالغين (18 سنة وفوق)، ومو موجّه للأطفال.</p>
 <h2>حقوقك</h2>
@@ -56,7 +65,7 @@ nav{text-align:center;font-size:14px}a{color:#1D433B}code{background:#f3ece0;pad
 
 <section id="en" class="en">
 <h1>Privacy Policy — “Basma” (بصمة)</h1>
-<small>Last updated: October 10, 2026 · App ID: com.aljawhar.basma · Developer: Aljawhar · Contact: <a href="mailto:al.gawhar.2020@gmail.com">al.gawhar.2020@gmail.com</a></small>
+<small>Last updated: October 10, 2026 (version 1.1.4) · App ID: com.aljawhar.basma · Developer: Aljawhar · Contact: <a href="mailto:al.gawhar.2020@gmail.com">al.gawhar.2020@gmail.com</a></small>
 <h2>Summary</h2>
 <p>Basma is a worker attendance app. A business owner (admin) registers a company and adds workers; each worker links their phone and records check-in / check-out after on-device identity verification and a location check. So the admin can see attendance, data is stored on a <b>server operated by the app developer</b>. <b>We do not sell data or share it with advertisers or other third parties. The app has no ads, analytics or tracking SDKs.</b></p>
 <h2>Data we collect</h2>
@@ -66,20 +75,29 @@ nav{text-align:center;font-size:14px}a{color:#1D433B}code{background:#f3ece0;pad
 <li><b>Device binding:</b> a public key generated on the worker’s phone (the private key never leaves the phone), device model / browser string, binding time.</li>
 <li><b>Precise location (GPS)</b>, its accuracy, distance from the work site and a mock-location flag — <b>only at the moment the worker taps check-in or check-out</b> (and when the admin taps “use my current location”). <b>No background location.</b></li>
 <li><b>Attendance records:</b> server time and phone time of each punch, type (in/out), and which verification method was used (biometric / device lock / PIN — the type only).</li>
+<li><b>Selfie photo</b> — one front-camera photo (compressed, about 50–80 KB) <b>taken only at the moment of check-in / check-out</b>, when the admin has “Selfie with every punch” enabled (on by default). Purpose: fraud prevention (“buddy punching”) — the admin can visually confirm that the account owner punched in person.</li>
+<li><b>Security alerts:</b> attempts to punch or link from a phone other than the bound one (time, device model, IP address and the attempt’s photo if any), shown to the admin as “Attempt from another device”.</li>
 <li><b>IP address</b> at binding and with each punch (security and abuse prevention).</li>
 <li><b>Subscription data</b> from Google Play when the admin subscribes: purchase token, order ID, plan, expiry date and an obfuscated account identifier that does not reveal your identity.</li>
 </ul>
 <p><b>Biometrics:</b> fingerprint / face checks are performed by Android on the phone. The app never receives or stores fingerprint or face data — only a success/failure result. The backup PIN is stored hashed on the phone only.</p>
+<h2>Camera and selfie photos</h2>
+<ul><li>The app asks for the <b>Camera</b> permission after an in-app explanation and uses <b>only the front camera</b>, only when the worker taps check-in or check-out. The photo is captured live inside the app — <b>gallery uploads are not possible and the app never accesses your photos or files</b>.</li>
+<li>The photo is sent encrypted (HTTPS) with the punch and stored on our server; its hash is signed with the device key together with the punch so it cannot be swapped.</li>
+<li><b>Who sees it:</b> only the admin of the worker’s own company (a thumbnail next to each punch). It is not shared with anyone else.</li>
+<li><b>No face recognition</b> or other biometric processing is performed on the photos, and they are not used for any other purpose; any comparison is done visually by the admin.</li>
+<li><b>Automatic deletion:</b> each photo is deleted from the server <b>90 days</b> after the punch (the attendance record remains, without the photo). Photos are deleted immediately when the company is deleted and are not included in backups.</li>
+<li>The admin can turn the feature off in Settings → Anti-fraud; no photos are taken then.</li></ul>
 <h2>WhatsApp</h2>
 <p>After each punch the app can open WhatsApp with a pre-filled message (worker name, time, map link). <b>Nothing is sent unless the worker presses Send in WhatsApp</b>; WhatsApp’s own privacy policy then applies.</p>
 <h2>Payments</h2>
 <p>Paid plans are sold through <b>Google Play</b>. Google processes the payment; we never see or store card or payment details — only the purchase token and subscription status, which we may verify with Google Play.</p>
 <h2>Who can see the data</h2>
-<p>The admin sees only their own company’s data; a worker sees only their own records; the developer accesses data only to operate, maintain and support the service; our hosting provider stores the server on our behalf. We do not share data with third parties for their own purposes, except where required by law or a competent authority.</p>
+<p>The admin sees only their own company’s data (including selfie photos and security alerts); a worker sees only their own records; the developer accesses data only to operate, maintain and support the service; our hosting provider stores the server on our behalf. We do not share data with third parties for their own purposes, except where required by law or a competent authority.</p>
 <h2>Security</h2>
 <p>All traffic between the app and the server is <b>encrypted in transit (HTTPS)</b>; the Android app refuses unencrypted connections. Passwords and session tokens are stored hashed, and every punch is signed with the device key. No system is 100% secure, but we take reasonable measures to protect your data.</p>
 <h2>Retention and deletion</h2>
-<p>Data is kept while the company account exists. When the admin deletes the company in the app (Settings → Delete company), all of its data is removed from the server immediately and from automatic backups within about 48 hours. See <a href="#delete">Data deletion</a>.</p>
+<p><b>Selfie photos and security alerts are deleted automatically after 90 days.</b> Other data is kept while the company account exists. When the admin deletes the company in the app (Settings → Delete company), all of its data is removed from the server immediately and from automatic backups within about 48 hours. See <a href="#delete">Data deletion</a>.</p>
 <h2>Children</h2>
 <p>The app is intended for business owners and adult workers (18+) and is not directed to children.</p>
 <h2>Your rights</h2>
